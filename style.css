@@ -37,17 +37,17 @@ header{
 
 }
 .highlight{
-    background-color: orangered;
-    border-radius: 5px;
+    background-color:#04AA6D;
+    border-radius: 15px;
     padding:16px 25px;
+    border: none;
+    box-shadow: 0 9px #999;
 }
 .banner-image{
     width:80%;
     padding-right: 79px;
     margin-top: 33px;
     padding-top: 33px;
-
-    
 }
 .banner6{
     width: 100%;
@@ -163,5 +163,38 @@ ul{
 ul li{
     list-style-type: none;
 }
+.icons{
+    display:flex;
+    justify-content: center;
+   
+}
+.fa-brands{
+    padding-left:20px;
+    padding-bottom: 20px;
+    color:white;
+}
 
 /*--------- mobile view----*/
+
+@media only screen and (max-width:688px){
+    
+}
+@media only screen and (min-width:689px) and (max-width:992px){
+  body{width:100%;}
+  main{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+  }
+  aside{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
