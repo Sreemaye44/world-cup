@@ -103,6 +103,7 @@ aside{
 .options{
     border-radius: 5px;
     padding:16px 25px;
+    cursor: pointer;
 }
 /*-------------
      blog style
@@ -165,6 +166,10 @@ aside{
 .fa-message{
     margin-left: 15px;
 
+}
+.tablet{
+    text-align: center;
+    display:none;
 }
 /* -------------footer style-----------  */
 footer{
@@ -252,9 +257,8 @@ main{
     
   }
   aside{
-    padding:10px;
+    height:200px;
     background-color: #fff;
-    padding-top:0;
   }
   .blogs{
     display: grid;
@@ -281,16 +285,24 @@ main{
 
   }
   /*---------- main-------- */
+ 
   aside{
+     width: 100%;
+     height:30%;
     display: flex;
     flex-direction: row;
     background-color: white;
     
   }
+  .options, .highlight{
+    height: 100px;
+}
   .blogs{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
+  }
+  .tablet{
+    display:block;
   }
 
 
