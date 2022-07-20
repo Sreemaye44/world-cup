@@ -4,8 +4,15 @@
     0% {
       background-color: #001F3F;
     }
+    25%{
+        background-color:brown;
+    }
     50% {
-      background-color: #FF4136;
+      background-color: rgb(212, 71, 71);
+    }
+    75%{
+        background-color: brown;
+
     }
     100% {
       background-color: #001F3F;
@@ -173,7 +180,7 @@ aside{
 }
 /* -------------footer style-----------  */
 footer{
-    background-color: rgb(51, 38, 38);
+    background-color: brown;
     color: white;
     text-align: center;
     margin-top: 50px;
@@ -246,7 +253,7 @@ ul a{
 /*-------------- main-------- */
 body{
     width:100%;
-    margin: 0 ;
+    margin: 0;
 
 }
 main{
@@ -257,14 +264,20 @@ main{
     
   }
   aside{
-    height:200px;
+    height:300px;
     background-color: #fff;
+    margin-bottom: 10px;
+    width:200px;
+  }
+  .options, .highlight{
+    padding: 10px;
+
   }
   .blogs{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-
   }
+
   /* -------footer-------- */
   ul{
     display:grid;
@@ -279,23 +292,33 @@ main{
 @media only screen and (min-width:689px) and (max-width:992px){
     /*-------- header------- */
   body{width:100%;}
+  .banner{
+    padding-top:111px;
+    padding-left: 30px;
+    padding-bottom:111px;
+}
+.banner-title{
+    font-size: 50px;}
+    
+  /*---------- main-------- */
   main{
+    
     display: grid;
     grid-template-rows: 1fr 2fr;
 
   }
-  /*---------- main-------- */
+  
  
   aside{
      width: 100%;
-     height:30%;
+     height:0%;
     display: flex;
     flex-direction: row;
     background-color: white;
     
   }
   .options, .highlight{
-    height: 100px;
+    height: 70px;
 }
   .blogs{
     display: grid;
